@@ -101,8 +101,10 @@ export default function Header() {
               elements: {
                 userButtonAvatarBox: 'w-10 h-10',
               },
+              variables: {
+                colorBackground: `${theme === 'dark' ? '#374151' : ''}`,
+              },
             }}
-            userProfileUrl='/dashboard?tab=profile'
           />
         </SignedIn>
         <SignedOut>
